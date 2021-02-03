@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  akamai-prod:
+    container_name: dev
+    build:
+      context: .
+      dockerfile: Dockerfile-nc
+    ports:
+      - '80:80'
+    environment:
+      - NODE_ENV=production
+      - APP=nocc
+

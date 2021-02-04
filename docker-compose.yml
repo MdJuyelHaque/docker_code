@@ -1,6 +1,6 @@
 version: '3.8'
 services:
-  akamai-prod:
+  prod:
     container_name: dev
     build:
       context: .
